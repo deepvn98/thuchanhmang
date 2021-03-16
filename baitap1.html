@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+   let so =[1,2,3,4,5,6,7];
+   let fo=0;
+   let las=so.length-1;
+   while (fo<las){
+       let luc=so[fo];
+       so[fo]=so[las];
+       so[las]=luc;
+       fo++;
+       las--;
+   }document.write(so);
+</script>
+</html>
