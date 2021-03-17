@@ -8,13 +8,12 @@
 
 </body>
 <script>
-    let so = [1,2,3,4,5,6,7,8,9];
-    for(let i=0; i<=(so.length)/2; i++){
-        let temp=so[i];
-         so[i]=so[so.length-1-i];
-        so[so.length-1-i]=temp;
-
-
-    }document.write(so);
+    let a=[1,2,3,4,5,6,7,8,9];
+    for (i=0; i<=a.length/2; i++){
+        let b=a[i];
+        a[i]=a[a.length-1-i]
+        a[a.length-1-i]=b
+    }document.write(a)
 </script>
+
 </html>
