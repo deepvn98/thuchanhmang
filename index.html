@@ -16,13 +16,13 @@
     let mang=new Array;
 function click1(){
     mang[x]=document.getElementById("number").value;
-    alert("element:"+ mang[x]+"added at index"+[x]);
+    // alert("element:"+ mang[x]+"added at index"+[x]);
     x++;
-    document.getElementById("number").value=""
+    // document.getElementById("number").value;
 }
     function click2() {
         let e = "<hr/>";
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i < mang.length; i++) {
             e += "Element " + i + " = " + mang[i] + "<br/>";
         }
         document.getElementById("result").innerHTML = e;
