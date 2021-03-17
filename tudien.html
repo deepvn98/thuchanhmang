@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            height: 30px; width: 300px;
+        }
+    </style>
+</head>
+<body>
+<br><br>
+<input type="text" id="tudien" placeholder="mời bạn nhập từ cần dịch">
+<br><br>
+<button type="button" onclick="push1()">Dịch</button>
+</body>
+<script>
+    function push1(){
+    let tv=["vui","buồn","tức giận"];
+    let ta=["happy","sad","angry"];
+    let check= false;
+    let giatri=document.getElementById("tudien").value;
+        for (let i = 0; i <tv.length ; i++) {
+            if (giatri==tv[i]){
+                alert("có thấy");
+                alert(ta[i]);
+                check=true;
+                break;
+
+            }
+
+        } if (!check){
+            alert("không tìm thấy")
+        }
+    }
+
+</script>
+</html>
