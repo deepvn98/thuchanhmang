@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a=[[2,3,4,5,8,7],
+         [4,6,9,8,3,10]];
+    let max=a[0][0];
+    let index=0;
+    let index1=0;
+    for (let i = 0; i <a.length ; i++) {
+        for (let j=0;j<a[i].length;j++){
+            if (a[i][j]>max){
+                max=a[i][j];
+                index=i;
+                index1=j;
+            }
+        }
+    }document.write("số lớn nhất là :"+max+" có vị trí là: "+"a["+index+"]["+index1+"]")
+</script>
+</html>
